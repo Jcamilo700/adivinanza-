@@ -38,7 +38,7 @@ def juego_de_adivinanzas():
             intentos_realizados += 1
             print("Entrada no es valida, Debes ingresar un numero entero")
     if not acertado:
-        print(f"\nSe te acabaron los intentos. El número era {numero_a_adivinar}")
+        print(f"\n se te acabaron los intentos. El número era {numero_a_adivinar}")
         print(f"Resultado en vector: {vector_resultados[numero_a_adivinar - 1]}")
 juego_de_adivinanzas()
 
