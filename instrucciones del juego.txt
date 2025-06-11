@@ -1,0 +1,16 @@
+¿que hace el programa?
+
+Se solicita al usuario el rango máximo para definir la dificultad
+
+Se calcula la cantidad de intentos permitidos como rango_maximo // 20 (mínimo 1)
+
+Se genera un numero aleatorio dentro del rango
+
+Se crea un vector donde la única posición que tiene "acierto" es la del número oculto
+
+Se permite al usuario adivinar el número informandole si es mayor o menor
+
+Controla entradas no numéricas con manejo de excepciones (try-except) y cuenta cada intento, no valido o valido 
+
+finaliza cuando al usuario se le acaban los intentos o acierta al numero  
+
