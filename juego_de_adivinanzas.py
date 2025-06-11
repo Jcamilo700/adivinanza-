@@ -4,12 +4,11 @@ def juego_de_adivinanzas():
     try:
         rango_maximo = int(input("selecciona un numero para definir el nivel de dificultad:"))
         if rango_maximo <1 :
-            print("El numero debe ser mayor a 0")
+            print( "El numero debe ser mayor a 0")
             return
     except ValueError:
         print("Entrada no valida, Debe ser un numero entero.")
         return
-
     numero_a_adivinar = random.randint ( 1, rango_maximo)
     intentos_maximos = rango_maximo // 20 if rango_maximo >= 20 else 1
     vector_resultados = ["fallo"] * rango_maximo
@@ -38,7 +37,6 @@ def juego_de_adivinanzas():
         except ValueError:
             intentos_realizados += 1
             print("Entrada no es valida, Debes ingresar un numero entero")
-
     if not acertado:
         print(f"\nSe te acabaron los intentos. El número era {numero_a_adivinar}")
         print(f"Resultado en vector: {vector_resultados[numero_a_adivinar - 1]}")
